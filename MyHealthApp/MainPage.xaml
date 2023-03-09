@@ -16,24 +16,30 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                x:Name="AccelLbl1"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+            <Label
+                x:Name="AccelLbl2"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
                 HorizontalOptions="Center" />
+            <Slider Maximum="1"
+                    Minimum="0.5"
+                    Value="0.8"
+                ValueChanged="OnSliderValueChanged" />
+            <Button x:Name="ResetBtn"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Reset"
+                    Clicked="ResetBtn_Clicked"/>
+            <Label x:Name="thresholdLbl"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
 
         </VerticalStackLayout>
     </ScrollView>

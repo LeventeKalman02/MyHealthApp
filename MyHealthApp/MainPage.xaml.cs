@@ -15,6 +15,11 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         ToggleAccelerometer();
         thresholdLbl.Text = " " + stepThreshold;
+
+    }
+    static void OnProcessExit(object sender, EventArgs e)
+    {
+        
     }
 
     public void ToggleAccelerometer()
